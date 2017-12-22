@@ -1,0 +1,67 @@
+.paui-textarea-auto {
+  position: relative;
+
+
+
+
+}
+.paui-textarea-auto.focus {
+  padding-right: 25px;
+}
+.paui-textarea-auto textarea {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  line-height: 25px;
+  padding: 8px 10px;
+  resize: none;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.paui-textarea-auto textarea::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+  color: #c4c4c4;
+}
+.paui-textarea-auto textarea:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: #c4c4c4;
+  opacity:  1;
+}
+.paui-textarea-auto textarea::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: #c4c4c4;
+  opacity:  1;
+}
+.paui-textarea-auto textarea:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #c4c4c4;
+}
+.paui-textarea-auto textarea::-ms-input-placeholder { /* Microsoft Edge */
+  color: #c4c4c4;
+}
+.paui-textarea-auto textarea::placeholder { /* Most modern browsers support this now. */
+  color: #c4c4c4;
+}
+
+.paui-textarea-auto.focus textarea {
+  padding-right: 35px;
+}
+.paui-textarea-auto pre{
+  display: block;
+  visibility: hidden;
+  min-height: 10em;
+  padding: 8px 10px; /*需要与textarea保持一致*/
+  white-space: pre-wrap; /*按照textarea中的内容，该换行换行*/
+  line-height: 25px; /*需要与textarea保持一致*/
+}
+
+.paui-textarea-auto .paui-textarea-btn-clear {
+  position: absolute;
+  right: 2px;
+  top: 4px;
+  padding: 8px;
+  z-index: 3;
+}
+.paui-textarea-auto .paui-textarea-btn-clear:after{
+  font-family: 'paui-icons';
+  font-size: 16px;
+  content: '\f128';
+  color: #bdbdbd;
+}
